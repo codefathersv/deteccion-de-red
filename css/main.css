@@ -1,0 +1,47 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: lightpink;
+    padding: .5rem 1.5rem;
+}
+
+.online,
+.offline {
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
+    z-index: 999;
+    padding: .5rem;
+    background: green;
+    color: #fff;
+}
+
+.offline {
+    background-color: #ca2c2c;
+}
